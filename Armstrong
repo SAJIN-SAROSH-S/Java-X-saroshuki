@@ -1,0 +1,20 @@
+public class Arm {
+   public static void main(String[] args) {
+       int num = 1234;
+       int originalNum = num;
+       int res= 0;
+       int length = String.valueOf(num).length();
+       while (num!=0) {
+           int digit = num % 10;
+           res += (int) Math.pow(digit,length);
+           num /= 10;
+       }
+      if (res==originalNum){
+           System.out.println("true");
+      }else{
+          System.out.println("False");
+      }
+       
+   
+}
+}
